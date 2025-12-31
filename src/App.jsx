@@ -97,15 +97,7 @@ export default function App() {
           </button>
         </div>
 
-        <div className="bg-white rounded-lg p-6 shadow-sm">
-          <h2 className="font-bold text-lg mb-2">ポイント</h2>
-          <ul className="list-disc list-inside space-y-2 text-slate-700">
-            <li>進捗率をパーセンテージで表示することでゴールまでの距離を明示</li>
-            <li>縞模様のアニメーションで「動いている」感を演出</li>
-            <li>進捗が取れない場合でも、Fake Progressで安心感を提供</li>
-          </ul>
-        </div>
-      </div>
+        
     </div>
   );
 }
