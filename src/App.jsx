@@ -8,7 +8,7 @@ const ProgressBar = ({ progress }) => {
         className="bg-blue-600 h-full rounded-full transition-all duration-300 ease-out relative"
         style={{ width: `${progress}%` }}
       >
-        {/* 縞模様のアニメーション（オプション） */}
+        
         <div
           className="absolute inset-0 w-full h-full opacity-20"
           style={{
@@ -59,15 +59,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 p-8">
       <div className="max-w-2xl mx-auto space-y-6">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
-            プログレスバー デモ
-          </h1>
-          <p className="text-slate-600 mb-4">
-            ファイルアップロードなど進捗を可視化
-          </p>
-        </div>
-
         <div className="bg-white rounded-lg p-8 shadow-sm space-y-6">
           <div className="space-y-3">
             <div className="flex justify-between items-center">
@@ -96,8 +87,7 @@ export default function App() {
             {isUploading ? 'アップロード中...' : uploadComplete ? '再度アップロード' : 'アップロード開始'}
           </button>
         </div>
-
-        
+      </div>
     </div>
   );
 }
